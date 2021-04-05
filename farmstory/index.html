@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>팜스토리::메인</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '돋움체';
+        }
+
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+
+        #wrapper {
+            width: 980px;
+            height: auto;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        /* 헤더영역 */
+        header {
+            width: 100%;
+            height: 142px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        /* 메인영역 - 공통 */
+        main {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        main > div {
+            width: 100%;
+            margin-top: 10px;            
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        
+        /* 메인영역 - 슬라이더 */
+        main > .slider {
+            height: 312px;
+        }
+
+        /* 메인영역 - 바로가기 배너 */
+        main > .banner {
+            height: 74px;
+        }
+
+        /* 메인영역 - 최신글 리스트 */
+        main > .latest {
+            height: 186px;
+        }
+
+        /* 메인영역 - 안내 */
+        main > .info {
+            height: 154px;
+        }
+
+        /* 푸터영역 */
+        footer {
+            width: 100%;
+            height: 120px;
+            margin-top: 10px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header></header>
+        <main>
+            <div class="slider"></div>
+            <div class="banner"></div>
+            <div class="latest"></div>
+            <div class="info"></div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
