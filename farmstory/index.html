@@ -69,6 +69,11 @@
             background-repeat: no-repeat;
         }
 
+        header > .gnb > li > a > img {
+            margin-left: 100px;
+            margin-top: -20px;
+        }
+
         header > .gnb > li:nth-child(1) > a {background-image: url('./img/head_menu1.png');}
         header > .gnb > li:nth-child(2) > a {background-image: url('./img/head_menu2.png');}
         header > .gnb > li:nth-child(3) > a {background-image: url('./img/head_menu3.png');}
@@ -80,7 +85,6 @@
         header > .gnb > li:nth-child(3) > a:hover {background-image: url('./img/head_menu3_ov.png');}
         header > .gnb > li:nth-child(4) > a:hover {background-image: url('./img/head_menu4_ov.png');}
         header > .gnb > li:nth-child(5) > a:hover {background-image: url('./img/head_menu5_ov.png');}
-
 
         /* 메인영역 - 공통 */
         main {
@@ -122,8 +126,23 @@
             width: 100%;
             height: 120px;
             margin-top: 10px;
-            border: 1px solid blue;
+            border-top: 1px solid #d1cab2;
             box-sizing: border-box;
+        }
+
+        footer > img {}
+        footer > p {
+            float: right;
+            margin-right: 26px;
+            margin-top: 16px;
+            font: normal 11px '돋움';
+            color: #585858;
+            line-height: 18px;
+        }
+        footer > p > span {
+            font-size: 11px;
+            font-family: 'Verdana';
+            color: #888;
         }
 
     </style>
@@ -144,7 +163,7 @@
             <!-- 1차 카테고리 메뉴 -->
             <ul class="gnb">
                 <li><a href="#">팜스토리소개</a></li>
-                <li><a href="#">장보기</a></li>
+                <li><a href="#"><img src="./img/head_menu_badge.png" alt="30%"/>장보기</a></li>
                 <li><a href="#">농작물이야기</a></li>
                 <li><a href="#">이벤트</a></li>
                 <li><a href="#">커뮤니티</a></li>
@@ -156,7 +175,15 @@
             <div class="latest"></div>
             <div class="info"></div>
         </main>
-        <footer></footer>
+        <footer>
+            <img src="./img/footer_logo.png" alt="로고"/>
+            <p>
+                (주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-팜스토리구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호<br />
+                등록번호 팜스토리01234 (2013.04.01) / 발행인 : 홍길동<br />
+                대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01) 234-5678 / 경기도 성남시 잘한다구 신난다동 345<br />
+                <span>Copyright(C)홍길동 All rights reserved.</span>
+            </p>
+        </footer>
     </div>
 </body>
 </html>
