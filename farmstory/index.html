@@ -23,11 +23,64 @@
 
         /* 헤더영역 */
         header {
+            position: relative;
             width: 100%;
             height: 142px;
-            border: 1px solid blue;
-            box-sizing: border-box;
+            background: url('./img/head_top_line.png') no-repeat;
         }
+
+        header > .logo {
+            position: absolute;
+            left: 50%;
+            top: 26px;
+            margin-left: -95px;
+        }
+        header > p {
+            float: right;
+            margin-top: 12px;
+        }
+        header > img {
+            position: absolute;
+            right: 0;
+            top: 56px;
+        }
+
+        header > .gnb {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+        }
+        header > .gnb > li {
+            float: left;
+            width: 20%;
+            height: 100%;
+            background-image: url('./img/head_menu_line.png');
+            background-repeat: no-repeat;
+            background-position-y: -6px;
+        }
+        header > .gnb > li > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+            background-position: 0 6px;
+            background-repeat: no-repeat;
+        }
+
+        header > .gnb > li:nth-child(1) > a {background-image: url('./img/head_menu1.png');}
+        header > .gnb > li:nth-child(2) > a {background-image: url('./img/head_menu2.png');}
+        header > .gnb > li:nth-child(3) > a {background-image: url('./img/head_menu3.png');}
+        header > .gnb > li:nth-child(4) > a {background-image: url('./img/head_menu4.png');}
+        header > .gnb > li:nth-child(5) > a {background-image: url('./img/head_menu5.png');}
+
+        header > .gnb > li:nth-child(1) > a:hover {background-image: url('./img/head_menu1_ov.png');}
+        header > .gnb > li:nth-child(2) > a:hover {background-image: url('./img/head_menu2_ov.png');}
+        header > .gnb > li:nth-child(3) > a:hover {background-image: url('./img/head_menu3_ov.png');}
+        header > .gnb > li:nth-child(4) > a:hover {background-image: url('./img/head_menu4_ov.png');}
+        header > .gnb > li:nth-child(5) > a:hover {background-image: url('./img/head_menu5_ov.png');}
+
 
         /* 메인영역 - 공통 */
         main {
@@ -77,7 +130,26 @@
 </head>
 <body>
     <div id="wrapper">
-        <header></header>
+        <header>
+            <a href="#" class="logo"><img src="./img/logo.png" alt="로고"/></a>
+            <p>
+                <a href="#">HOME |</a>
+                <a href="#">로그인 |</a>
+                <a href="#">회원가입 |</a>
+                <a href="#">고객센터</a>
+            </p>
+
+            <img src="./img/head_txt_img.png" alt="3만원 이상 무료배송&팜카드 10%적립"/>
+
+            <!-- 1차 카테고리 메뉴 -->
+            <ul class="gnb">
+                <li><a href="#">팜스토리소개</a></li>
+                <li><a href="#">장보기</a></li>
+                <li><a href="#">농작물이야기</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+        </header>
         <main>
             <div class="slider"></div>
             <div class="banner"></div>
