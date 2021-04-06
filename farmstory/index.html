@@ -17,7 +17,6 @@
         #wrapper {
             width: 980px;
             height: auto;
-            border: 1px solid red;
             margin: 0 auto;
         }
 
@@ -103,7 +102,46 @@
         
         /* 메인영역 - 슬라이더 */
         main > .slider {
+            position: relative;
             height: 312px;
+        }
+
+        main > .slider > ul {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        main > .slider > ul > li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid orange;
+            box-sizing: border-box;
+        }
+
+        main > .slider > ul > li:nth-child(1) {left:    0; top: 0;}
+        main > .slider > ul > li:nth-child(2) {left: 100%; top: 0;}
+        main > .slider > ul > li:nth-child(3) {left: 200%; top: 0;}
+
+        main > .slider > img {
+            position: absolute;
+            left: 36px;
+            top: 46px;
+        }
+
+        main > .slider > div {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 230px;
+            height: 312px;
+            background: url('./img/main_banner_bg.jpg') no-repeat;
+            border: 1px solid blue;
+            box-sizing: border-box;
         }
 
         /* 메인영역 - 바로가기 배너 */
@@ -111,10 +149,50 @@
             height: 74px;
         }
 
+        main > .banner > a {
+            float: left;
+            display: block;
+            width: 50%;
+            height: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+        main > .banner > a:nth-child(1) {background-image: url('./img/main_banner_sub1_bg.jpg');}
+        main > .banner > a:nth-child(2) {background-image: url('./img/main_banner_sub2_bg.jpg');}        
+
         /* 메인영역 - 최신글 리스트 */
         main > .latest {
             height: 186px;
         }
+
+        main > .latest > div {
+            position: relative;
+            float: left;
+            width: 33.33%;
+            height: 100%;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        main > .latest > div > img:nth-child(1) {
+            position: absolute;
+            left: 0;
+            top: 16px;
+        }
+        main > .latest > div > img:nth-child(2) {
+            position: absolute;
+            left: 0;
+            bottom: 16px;
+        }
+        main > .latest > div > table {
+            position: absolute;
+            right: 0;
+            bottom: 16px;
+        }
+
+        main > .latest > div > table tr {}
+        main > .latest > div > table tr > td {}
+        main > .latest > div > table tr > td:nth-child(2) {}
 
         /* 메인영역 - 안내 */
         main > .info {
@@ -170,9 +248,61 @@
             </ul>
         </header>
         <main>
-            <div class="slider"></div>
-            <div class="banner"></div>
-            <div class="latest"></div>
+            <div class="slider">
+                <ul>
+                    <li><img src="./img/main_slide_img1.jpg" alt="슬라이더1"/></li>
+                    <li><img src="./img/main_slide_img2.jpg" alt="슬라이더2"/></li>
+                    <li><img src="./img/main_slide_img3.jpg" alt="슬라이더3"/></li>
+                </ul>
+                <img src="./img/main_slide_img_tit.png" alt="사람과 자연을 사랑하는 팜스토리"/>
+                <div>
+                    <img src="./img/main_banner_txt.png" alt="GRAND OPEN"/>
+                    <img src="./img/main_banner_tit.png" alt="팜스토리 오픈 기념 30%할인 이벤트"/>
+                    <img src="./img/main_banner_img.png" alt="GRAND OPEN"/>
+                </div>
+            </div>
+
+            <div class="banner">
+                <a href="#"><img src="./img/main_banner_sub1_tit.png" alt="오늘의 식단"/></a>
+                <a href="#"><img src="./img/main_banner_sub2_tit.png" alt="나도 요리사"/></a>
+            </div>
+
+            <div class="latest">
+                <div>
+                    <img src="./img/main_latest1_tit.png" alt="텃밭가꾸기"/>
+                    <img src="./img/main_latest1_img.jpg" alt="이미지"/>
+                    <table border="1">
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>토마토! 건강하게 길러서 안심하고 먹자</td>
+                            <td>21-04-06</td>
+                        </tr>
+                    </table>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+
             <div class="info"></div>
         </main>
         <footer>
