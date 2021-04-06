@@ -3,47 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>팜스토리::인사말</title>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <style>
-        /* 서브페이지 공통 */
-        #sub {
-            width: 100%;
-            height: auto;
-            border: 1px solid red;
-            box-sizing: border-box;
-        }
-        #sub > div {
-            width: 100%;
-            height: 184px;
-            background-image: url('../img/sub_top_bg.jpg');
-        }
-        #sub > section {
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-        }
-        #sub > section > aside {
-            float: left;
-            width: 176px;
-            height: 650px;
-            background-image: url('../img/sub_aside_bg_line.png');
-            background-repeat: no-repeat;
-            background-position: right;
-        }
-        #sub > section > aside > img {
-            margin: 16px 10px 12px 10px;
-        }
-        
-        #sub > section > aside > ul {}
-        #sub > section > aside > ul > li {}
-        #sub > section > aside > ul > li > a {}
-
-        #sub > section > article {
-            float: left;
-            width: 800px;
-            height: 650px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/style.css"/>    
 </head>
 <body>
     <div id="wrapper">
@@ -71,15 +31,25 @@
         <!-- 서브페이지 메인 -->
         <div id="sub">
             <div><img src="../img/sub_top_tit1.png" alt="INTRODUCTION"/></div>
-            <section>
+            <section class="cate1">
                 <aside>
                     <img src="../img/sub_aside_cate1_tit.png" alt="팜스토리소개"/>
                     <ul>
-                        <li><a href="#">인사말</a></li>
+                        <li class="on"><a href="#">인사말</a></li>
                         <li><a href="#">찾아오시는길</a></li>
                     </ul>
                 </aside>
-                <article></article>
+                <article>
+                    <nav>
+                        <img src="../img/sub_nav_tit_cate1_tit1.png" alt="인사말"/>
+                        <p>
+                            HOME > 팜스토리소개 > <strong>인사말</strong>
+                        </p>
+                    </nav>
+                    <!-- 컨텐츠 시작 -->
+
+                    <!-- 컨텐츠 끝 -->
+                </article>
             </section>
         </div>
 

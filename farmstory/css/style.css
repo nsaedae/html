@@ -186,8 +186,51 @@ main > .latest > div > table tr > td:nth-child(2) {
 /* 메인영역 - 안내 */
 main > .info {
     height: 154px;
-    border: 1px solid blue;
+    overflow: hidden;
+    padding: 10px 0;
+    border-top: 2px solid #756c65;
     box-sizing: border-box;
+}
+
+main > .info > div {
+    float: left;
+    height: 100%;
+}
+main > .info > div:nth-child(1) {
+    width: 386px;
+}
+main > .info > div:nth-child(2) {
+    width: 230px;
+    padding-left: 16px;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+main > .info > div:nth-child(3) {
+    width: 360px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+main > .info .cs {
+    overflow: hidden;
+}
+main > .info .cs > * {
+    float: left;
+    margin-right: 16px;
+}
+
+main > .info .btns {
+    margin-top: 20px;
+}
+
+main > .info > div > .tit {
+    margin-bottom: 16px;
+}
+
+main > .info > div > .account {
+    line-height: 18px;
+    color: #666;
 }
 
 /* 푸터영역 */
@@ -212,4 +255,129 @@ footer > p > span {
     font-size: 11px;
     font-family: 'Verdana';
     color: #888;
+}
+
+/* 서브페이지 공통 */
+#sub {
+    width: 100%;
+    height: auto;
+}
+#sub > div {
+    width: 100%;
+    height: 184px;
+    background-image: url('../img/sub_top_bg.jpg');
+}
+#sub > section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#sub > section > aside {
+    float: left;
+    width: 176px;
+    height: 650px;
+    background-image: url('../img/sub_aside_bg_line.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#sub > section > aside > img {
+    margin: 16px 10px 12px 10px;
+}
+
+#sub > section > aside > ul {
+    width: 175px;
+    height: 233px;
+    background-image: url('../img/sub_aside_bg_lnb.png');
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+#sub > section > aside > ul > li {
+    width: 100%;
+    height: 29px;
+    margin-bottom: 6px;
+}
+#sub > section > aside > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+/* 팜스토리소개 사이드메뉴 */
+#sub > .cate1 > aside > ul > li:nth-child(1) > a {background-image: url('../img/sub_cate1_lnb1.png');}
+#sub > .cate1 > aside > ul > li:nth-child(2) > a {background-image: url('../img/sub_cate1_lnb2.png');}
+#sub > .cate1 > aside > ul > li:nth-child(1) > a:hover {background-image: url('../img/sub_cate1_lnb1_ov.png');}
+#sub > .cate1 > aside > ul > li:nth-child(2) > a:hover {background-image: url('../img/sub_cate1_lnb2_ov.png');}
+#sub > .cate1 > aside > ul > li:nth-child(1).on > a {background-image: url('../img/sub_cate1_lnb1_ov.png');}
+#sub > .cate1 > aside > ul > li:nth-child(2).on > a {background-image: url('../img/sub_cate1_lnb2_ov.png');}
+
+/* 장보기 사이드메뉴 */
+#sub > .cate2 > aside > ul > li:nth-child(1) > a {background-image: url('../img/sub_cate2_lnb1.png');}
+#sub > .cate2 > aside > ul > li:nth-child(1) > a:hover {background-image: url('../img/sub_cate2_lnb1_ov.png');}
+#sub > .cate2 > aside > ul > li:nth-child(1).on > a {background-image: url('../img/sub_cate2_lnb1_ov.png');}
+
+/* 농작물이야기 사이드메뉴 */
+#sub > .cate3 > aside > ul > li:nth-child(1) > a {background-image: url('../img/sub_cate3_lnb1.png');}
+#sub > .cate3 > aside > ul > li:nth-child(2) > a {background-image: url('../img/sub_cate3_lnb2.png');}
+#sub > .cate3 > aside > ul > li:nth-child(3) > a {background-image: url('../img/sub_cate3_lnb3.png');}
+#sub > .cate3 > aside > ul > li:nth-child(1) > a:hover {background-image: url('../img/sub_cate3_lnb1_ov.png');}
+#sub > .cate3 > aside > ul > li:nth-child(2) > a:hover {background-image: url('../img/sub_cate3_lnb2_ov.png');}
+#sub > .cate3 > aside > ul > li:nth-child(3) > a:hover {background-image: url('../img/sub_cate3_lnb3_ov.png');}
+#sub > .cate3 > aside > ul > li:nth-child(1).on > a {background-image: url('../img/sub_cate3_lnb1_ov.png');}
+#sub > .cate3 > aside > ul > li:nth-child(2).on > a {background-image: url('../img/sub_cate3_lnb2_ov.png');}
+#sub > .cate3 > aside > ul > li:nth-child(3).on > a {background-image: url('../img/sub_cate3_lnb3_ov.png');}
+
+/* 이벤트 사이드메뉴 */
+#sub > .cate4 > aside > ul > li:nth-child(1) > a {background-image: url('../img/sub_cate4_lnb1.png');}
+#sub > .cate4 > aside > ul > li:nth-child(1) > a:hover {background-image: url('../img/sub_cate4_lnb1_ov.png');}
+#sub > .cate4 > aside > ul > li:nth-child(1).on > a {background-image: url('../img/sub_cate4_lnb1_ov.png');}
+
+
+/* 커뮤니티 사이드메뉴 */
+#sub > .cate5 > aside > ul > li:nth-child(1) > a {background-image: url('../img/sub_cate5_lnb1.png');}
+#sub > .cate5 > aside > ul > li:nth-child(2) > a {background-image: url('../img/sub_cate5_lnb2.png');}
+#sub > .cate5 > aside > ul > li:nth-child(3) > a {background-image: url('../img/sub_cate5_lnb3.png');}
+#sub > .cate5 > aside > ul > li:nth-child(4) > a {background-image: url('../img/sub_cate5_lnb4.png');}
+#sub > .cate5 > aside > ul > li:nth-child(5) > a {background-image: url('../img/sub_cate5_lnb5.png');}
+#sub > .cate5 > aside > ul > li:nth-child(1) > a:hover {background-image: url('../img/sub_cate5_lnb1_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(2) > a:hover {background-image: url('../img/sub_cate5_lnb2_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(3) > a:hover {background-image: url('../img/sub_cate5_lnb3_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(4) > a:hover {background-image: url('../img/sub_cate5_lnb4_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(5) > a:hover {background-image: url('../img/sub_cate5_lnb5_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(1).on > a {background-image: url('../img/sub_cate5_lnb1_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(2).on > a {background-image: url('../img/sub_cate5_lnb2_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(3).on > a {background-image: url('../img/sub_cate5_lnb3_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(4).on > a {background-image: url('../img/sub_cate5_lnb4_ov.png');}
+#sub > .cate5 > aside > ul > li:nth-child(5).on > a {background-image: url('../img/sub_cate5_lnb5_ov.png');}
+
+
+
+#sub > section > article {
+    float: left;
+    width: 800px;
+    height: 650px;
+    padding-left: 46px;
+    box-sizing: border-box;
+}
+
+#sub > section > article > nav {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #c2c2c2;
+    box-sizing: border-box;
+}
+#sub > section > article > nav > img {
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+}
+#sub > section > article > nav > p {
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+}
+#sub > section > article > nav > p > strong {
+    font-weight: bold;
+    color: #adba15;
 }
